@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --- Page Fade In --- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* --- Section Slide Up --- */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* --- Card Pop Animation --- */
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.card-pop {
+  animation: cardPop 0.35s ease-out;
+}
+
+/* --- Button Tap Animation --- */
+button:active {
+  transform: scale(0.96);
+  transition: 0.1s;
+}
+
+/* Smooth Input Focus Glow */
+input:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(59,130,246,0.4);
+  transition: 0.15s;
+}
