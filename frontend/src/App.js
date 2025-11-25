@@ -29,7 +29,7 @@ function App() {
             onClick={toggleTheme}
             className="px-3 sm:px-4 py-2 rounded-lg bg-blue-600 dark:bg-yellow-500 text-white dark:text-black shadow text-sm sm:text-base"
           >
-            {theme === "dark" ? "🌞 Light" : "🌙 Dark"}
+            {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
           </button>
         </nav>
 
