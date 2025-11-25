@@ -50,7 +50,8 @@ SECRET_KEY = 'django-insecure-=&wesig64$@ex1nvsm#xm64af!^6+e(1$rm1n#ufs#&!mk%res
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*",]
+
 
 
 
@@ -69,8 +70,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
-
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -156,7 +157,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -164,5 +167,5 @@ CORS_ALLOW_ALL_ORIGINS = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
